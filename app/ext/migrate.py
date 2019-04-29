@@ -3,5 +3,6 @@ from .db import db
 
 migrate = Migrate()
 
+
 def configure(app):
     migrate.init_app(app, db)

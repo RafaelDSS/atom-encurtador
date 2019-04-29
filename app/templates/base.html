@@ -16,10 +16,7 @@
     <body>
         <main class="container">
             <nav class="navbar">
-                <img
-                    src="{{ url_for('static', filename='img/logoencurtador.png') }}"
-                    alt="Logo do encutardor de urls, atom url."
-                />
+                <img src="{{ url_for('static', filename='img/logoencurtador.png') }}" alt="Logo do encutardor de urls, atom url."/>
             </nav>
             <section class="message">
                 {% if link %} URL criada com sucesso - Acesse:
