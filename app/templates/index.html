@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% macro render_field(field) %}
+{{ field.label }}
+{{ field(**kwargs)|safe }}
+{% if field.errors %}
+<ul>
+    {% for error in field.errors %}
+    <li>{{ error }}</li>
+    {% endfor %}
+</ul>
+{% endif %} {% endmacro %} {% block form %}
+
+<div class="form-group">
+    <form action="/" method="POST">
+        {{ form.csrf_token }}
+        {{ form.hidden_tag() }}
+
+        <div class="input-slogan">
+            {{ render_field(form.url_origem, placeholder="urlcurta") }}
+        </div>
+        <div class="input-link">
+            {{ render_field(form.url_destino, placeholder="https://exemple.com.br", type="url") }}
+        </div>
+        <div class="btn-group">
+            {{ form.submit(class="btn") }}
+        </div>
+    </form>
+</div>
+{% endblock %}

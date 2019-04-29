@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Atom-url > Encurtador</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/style.css') }}"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Rubik"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main class="container">
+            <nav class="navbar">
+                <img
+                    src="{{ url_for('static', filename='img/logoencurtador.png') }}"
+                    alt="Logo do encutardor de urls, atom url."
+                />
+            </nav>
+            <section class="message">
+                {% if link %} URL criada com sucesso - Acesse:
+                <a href="{{ link }}">{{ link }}</a>
+                {% endif %} {% block form%} {% endblock %}
+            </section>
+        </main>
+    </body>
+</html>

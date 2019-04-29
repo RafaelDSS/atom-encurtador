@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    background-image: url("../img/background1.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Rubik',Arial, sans-serif;
+    padding: 0 10px;
+}
+
+.form-group form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    color: #1e736c;
+    font-size: 1.2em;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+}
+
+.input-slogan
+, .input-link {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    outline: 0;
+    background-color: rgba(0,0,0,0.3);
+    border: 0;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+input:focus {
+    box-shadow: 1px 1px 4px black;
+}
+
+.btn {
+    width: 200px;
+    align-self: center;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 0;
+    box-shadow: 1px 2px 2px rgba(0,0,0,1);
+    background-color: #008B74;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.875em;
+    letter-spacing: 0.063em;
+    transition: all .4s;
+}
+
+.btn-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    box-shadow: none;
+    transition: all .4s;
+}
+
+/* Chrome, Safari, Opera */
+::-webkit-input-placeholder {
+    opacity: 1;
+    color: #fff;
+    font-family: "Rubik", Sans-Serif;
+    text-transform: uppercase;
+}
+
+/* Firefox 18- */
+::-moz-placeholder {
+    opacity: 1;
+    color: #fff;
+    font-family: "Rubik", Sans-Serif;
+    text-transform: uppercase;
+}
+
+/* Firefox 19+ */
+::-moz-placeholder {
+    opacity: 1;
+    color: #fff;
+    font-family: "Rubik", Sans-Serif;
+    text-transform: uppercase;
+}
+
+/* IE10+ */
+::-ms-input-placeholder {
+    opacity: 1;
+    color: #fff;
+    font-family: "Rubik", Sans-Serif;
+    text-transform: uppercase;
+}
